@@ -5,7 +5,6 @@
 
 //card creator
 
-
 function shuffle(a) {
     var j, x, i;
     for (i = a.length; i; i -= 1) {
@@ -17,9 +16,8 @@ function shuffle(a) {
     return a;
 }
 function cardCreator() {
-    //first remove any cards which might be on the board from previous game
+    // This is what I wanted to use instead of jquery, id like to see how I can make it work with you// document.getElementById("bodySpace").classList.remove("card");
     $(".card").remove();
-    // $(".bekindrewind").remove();
 
 
     var idList = ['1', '2', '3', '4', '5', '6', '1', '2', '3', '4', '5', '6'];
@@ -70,8 +68,6 @@ function cardCreator() {
         }
 
     }
-
-
 
     document.body.style.background = "#f3f3f3 url('./Memorygameimages/bg.jpg') no-repeat right top";
 
