@@ -1,0 +1,63 @@
+.card{
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    border: 1px black;
+    display:inline-block;
+    background-image: url("Memorygameimages/texture.jpg") ;
+}
+.body{
+    background-image: url("Memorygameimages/bg.jpg");
+    background-size: cover;
+
+}
+
+.container-fluid{
+margin-bottom: 47px;
+}
+
+
+.playagain{
+    margin-left: 1186px;
+    margin-top: 40px;
+    color: white;
+    background-color: maroon;
+    font-family: calibri;
+    font-size: 20px;
+    border-radius: 9px;
+    height: 40px;
+    width: 140px;
+}
+
+
+
+.bekindrewind{
+    display: none;
+    margin-left: 873px;
+    margin-top: 40px;
+    color: white;
+    background-color: red;
+    font-family: calibri;
+    font-size: 20px;
+    border-radius: 9px;
+    height: 40px;
+    width: 140px;
+
+}
+@media screen and (min-width: 1400px) {
+    .cardCollection{
+        max-width: 925px;
+        text-align: center;
+        align-content: center;
+        margin: 0 25% 0 25%;
+    }
+
+    }
+.cardCollection{
+    max-width: 925px;
+    text-align: center;
+    align-content: center;
+    margin: 0 14% 0 14%;
+}
