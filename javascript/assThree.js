@@ -1,7 +1,7 @@
 /**
  * Created by itc_user on 6/30/2016.
  */
-"use strict";
+// "use strict";
 
 //card creator
 
@@ -16,8 +16,21 @@ function shuffle(a) {
     return a;
 }
 function cardCreator() {
-    // This is what I wanted to use instead of jquery, id like to see how I can make it work with you// document.getElementById("bodySpace").classList.remove("card");
-    $(".card").remove();
+
+    var buttonList = document.getElementsByTagName("button");
+    buttonList[0].addEventListener("click",cardCreator);
+    buttonList[1].addEventListener("click",rewinder);
+
+
+
+
+
+    // $(".card").remove();
+    var PreExistDiv = document.getElementsByClassName("cardCollection");
+        for(var k = 0;k<PreExistDiv.length;k++){
+            PreExistDiv[k].classList.remove("card")
+        }
+
 
 
     var idList = ['1', '2', '3', '4', '5', '6', '1', '2', '3', '4', '5', '6'];
