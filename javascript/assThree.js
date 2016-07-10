@@ -5,6 +5,10 @@
 
 //card creator
 
+var buttonList = document.getElementsByTagName("button");
+buttonList[0].addEventListener("click",rewinder);
+buttonList[1].addEventListener("click",rewinder);
+
 function shuffle(a) {
     var j, x, i;
     for (i = a.length; i; i -= 1) {
@@ -16,22 +20,11 @@ function shuffle(a) {
     return a;
 }
 function cardCreator() {
-
-    var buttonList = document.getElementsByTagName("button");
-    buttonList[0].addEventListener("click",cardCreator);
-    buttonList[1].addEventListener("click",rewinder);
-
-
-
-
-
     // $(".card").remove();
     var PreExistDiv = document.getElementsByClassName("cardCollection");
         for(var k = 0;k<PreExistDiv.length;k++){
             PreExistDiv[k].classList.remove("card")
         }
-
-
 
     var idList = ['1', '2', '3', '4', '5', '6', '1', '2', '3', '4', '5', '6'];
     idList = shuffle(idList);
